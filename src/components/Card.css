@@ -1,0 +1,138 @@
+.classCard {
+  background-image: url('https://w0.peakpx.com/wallpaper/874/134/HD-wallpaper-atletico-mineiro-brazil-club-emblem-logo-mg-wooden.jpg');
+  border: 10px solid rgb(172, 172, 172);
+  border-radius: 10px;
+  height: 470px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 290px;
+}
+
+.rareCardd {
+  background-color: white;
+  border-bottom: 1px solid rgba(255, 255, 0, 0.493);
+  border-radius: 10px 60px;
+  border-top: 1px solid rgba(255, 255, 0, 0.493);
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 2px;
+  text-transform: uppercase;
+}
+
+.class-normal {
+  border: 10px solid black;
+}
+
+.class-normal-item {
+  background-color: white;
+}
+
+.class-raro {
+  border: 10px solid rgb(153, 153, 153);
+}
+
+.class-raro-item {
+  background-color: rgb(153, 153, 153);
+  color: white;
+}
+
+.class-muito-raro {
+  border: 10px solid rgb(129, 129, 70);
+}
+
+.class-muito-raro-item {
+  background-color: rgb(129, 129, 70);
+  color: white;
+}
+
+.sP {
+  border-bottom: 15px white ridge;
+  border-left: 20px rgb(212, 212, 37) ridge;
+  border-right: 20px rgb(212, 212, 37) ridge;
+  border-top: 15px white ridge;
+}
+
+.name-card {
+  background-color: black;
+  border: solid 1px  rgba(255, 255, 0, 0.493);
+  border-radius: 0 10px;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 900;
+  height: 20px;
+  margin-bottom: 3px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.img-card {
+  border: solid 1px  rgba(255, 255, 0, 0.493);
+  border-radius: 30px 0;
+  height: 185px;
+  width: 285px;
+}
+
+.description-card {
+  background-color: white;
+  border-bottom: 1px solid rgba(255, 255, 0, 0.493);
+  border-radius: 5px;
+  border-top: 1px solid rgba(255, 255, 0, 0.493);
+  height: 38px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 3px;
+}
+
+.attr-card1 {
+  background-color: black;
+  border-bottom: 1px solid rgba(255, 255, 0, 0.493);
+  border-radius: 10px 60px;
+  border-top: 1px solid rgba(255, 255, 0, 0.493);
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 2px;
+}
+
+.attr-card2 {
+  background-color: white;
+  border-bottom: 1px solid rgba(255, 255, 0, 0.493);
+  border-radius: 10px 60px;
+  border-top: 1px solid rgba(255, 255, 0, 0.493);
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 2px;
+}
+
+.attr-card3 {
+  background-color: black;
+  border-bottom: 1px solid rgba(255, 255, 0, 0.493);
+  border-radius: 10px 60px;
+  border-top: 1px solid rgba(255, 255, 0, 0.493);
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 2px;
+}
+
+.attr-card {
+  display: flex;
+  font-weight: 900;
+  justify-content: space-between;
+  padding: 5px 50px;
+}
+
+.trunfo-card {
+  background-color: rgba(173, 150, 16, 0.932);
+  border-bottom: 1px solid rgba(255, 255, 0, 0.493);
+  border-radius: 60px;
+  border-top: 1px solid rgba(255, 255, 0, 0.493);
+  color: white;
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 2px;
+  text-transform: uppercase;
+}
