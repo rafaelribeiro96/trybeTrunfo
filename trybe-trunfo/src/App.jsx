@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Form from './components/Form';
 import Card from './components/Card';
 import './App.css';
-/* import data from './components/Data'; */
+import data from './components/Data';
 
 const initialState = {
   cardName: '',
@@ -15,7 +15,7 @@ const initialState = {
   cardTrunfo: false,
   hasTrunfo: false,
   isSaveButtonDisabled: true,
-  savedCards: /* data, */ [],
+  savedCards: data, /* [], */
   filterName: '',
   filterRare: 'todas',
   filterTf: false,
@@ -111,15 +111,15 @@ class App extends Component {
       cardTrunfo,
     };
     this.setState({
-      savedCards: [createCard, ...savedCards] },
+      savedCards: [...savedCards, createCard] },
     () => {
       this.hasTrunfo();
       this.setState({
         cardName: '',
         cardDescription: '',
-        cardAttr1: '',
-        cardAttr2: '',
-        cardAttr3: '',
+        cardAttr1: '0',
+        cardAttr2: '0',
+        cardAttr3: '0',
         cardImage: '',
         cardRare: 'normal',
         cardTrunfo: false,
@@ -179,11 +179,11 @@ class App extends Component {
 
     return (
       <main>
-        <div className="tittle-page">
+        <header className="tittle-page">
           <img src="https://atletico.com.br/wp-content/uploads/2022/01/atletico.svg" alt="" className="tittle-img" />
           <h1 className="tittle-trunfo">Trunfo do Galo</h1>
           <div />
-        </div>
+        </header>
 
         <div className="classCreateCard">
           <div className="classFormDiv">
