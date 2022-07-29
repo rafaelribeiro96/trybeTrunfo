@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 import Form from './components/Form';
 import Card from './components/Card';
 import './App.css';
-import data from './components/Data';
+/* import data from './components/Data'; */
 
 const initialState = {
   cardName: '',
   cardDescription: '',
-  cardAttr1: '0',
-  cardAttr2: '0',
-  cardAttr3: '0',
+  cardAttr1: '',
+  cardAttr2: '',
+  cardAttr3: '',
   cardImage: '',
   cardRare: 'normal',
   cardTrunfo: false,
   hasTrunfo: false,
   isSaveButtonDisabled: true,
-  savedCards: data, /* [], */
+  savedCards: /* data, */ [],
   filterName: '',
   filterRare: 'todas',
   filterTf: false,
@@ -87,6 +87,8 @@ class App extends Component {
       && n2 >= 0 && n2 <= maxAtbPower
       && n3 >= 0 && n3 <= maxAtbPower
       && (n1 + n1 + n3) <= maxAllAtbPower;
+      if ((n1 + n1 + n3)
+      > maxAllAtbPower) alert('A soma dos atributos não podem ultrapassar 210');
       const isValidate = textValidate && atbValidate;
       this.setState({
         isSaveButtonDisabled: !isValidate,
@@ -98,7 +100,6 @@ class App extends Component {
     const {
       cardName, cardDescription, cardAttr1, cardAttr2, cardAttr3,
       cardImage, cardRare, cardTrunfo, savedCards } = this.state;
-
     const createCard = {
       cardName,
       cardDescription,
@@ -109,7 +110,6 @@ class App extends Component {
       cardRare,
       cardTrunfo,
     };
-
     this.setState({
       savedCards: [createCard, ...savedCards] },
     () => {
@@ -117,9 +117,9 @@ class App extends Component {
       this.setState({
         cardName: '',
         cardDescription: '',
-        cardAttr1: '0',
-        cardAttr2: '0',
-        cardAttr3: '0',
+        cardAttr1: '',
+        cardAttr2: '',
+        cardAttr3: '',
         cardImage: '',
         cardRare: 'normal',
         cardTrunfo: false,

@@ -23,6 +23,11 @@ class Form extends Component {
       <form>
 
         <h1>Criar nova carta</h1>
+        <p className="formInstruction">
+          Todos os campos são obrigatórios,
+          a soma total dos três atributos não podem ultrapassar 210.
+
+        </p>
 
         <label htmlFor="name">
           Nome da carta:
@@ -60,6 +65,9 @@ class Form extends Component {
             name="cardAttr1"
             id="cardAttr1"
             data-testid="attr1-input"
+            placeholder="Mínimo 0, máximo 90"
+            max={ 90 }
+            min={ 0 }
             value={ cardAttr1 }
             onChange={ onInputChange }
           />
@@ -72,6 +80,9 @@ class Form extends Component {
             name="cardAttr2"
             id="cardAttr2"
             data-testid="attr2-input"
+            placeholder="Mínimo 0, máximo 90"
+            max={ 90 }
+            min={ 0 }
             value={ cardAttr2 }
             onChange={ onInputChange }
           />
@@ -84,6 +95,9 @@ class Form extends Component {
             name="cardAttr3"
             id="cardAttr3"
             data-testid="attr3-input"
+            placeholder="Mínimo 0, máximo 90"
+            max={ 90 }
+            min={ 0 }
             value={ cardAttr3 }
             onChange={ onInputChange }
           />
